@@ -1,19 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import UserInputForm from "./components/FictionalUser/UserInput/UserInputForm";
-import UserInfoList from "./components/FictionalUser/UserInfo/UserInfoList";
 
 function App() {
-  const [userInfoList, setUserInfoList] = useState([]);
-  const savedUserInputHandler = function (userInfo) {
-    setUserInfoList((prevUserInfoList) => [userInfo, ...prevUserInfoList]);
-  };
-  return (
-    <main className="app">
-      <UserInputForm onSaveUserInput={savedUserInputHandler} />
-      <UserInfoList list={userInfoList} />
-    </main>
-  );
+  return <h1>Let's start!!</h1>;
 }
-
 export default App;
