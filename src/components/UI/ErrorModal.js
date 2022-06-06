@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const ErrorModal = function (props) {
   return (
-    <div>
+    <React.Fragment>
       <div className={styles.backdrop} onClick={props.closeModal} />
       <Card className={styles.modal}>
         <header className={styles.header}>
@@ -18,7 +18,7 @@ const ErrorModal = function (props) {
           <Button onClick={props.closeModal}>Okay</Button>
         </footer>
       </Card>
-    </div>
+    </React.Fragment>
   );
 };
 

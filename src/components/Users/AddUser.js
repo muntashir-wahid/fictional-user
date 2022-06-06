@@ -45,7 +45,7 @@ const AddUser = function (props) {
   };
 
   return (
-    <div>
+    <React.Fragment>
       {error && (
         <ErrorModal
           title={error.title}
@@ -72,7 +72,7 @@ const AddUser = function (props) {
           <Button type="submit">Add user</Button>
         </form>
       </Card>
-    </div>
+    </React.Fragment>
   );
 };
 
