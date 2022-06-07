@@ -50,7 +50,7 @@ const AddUser = function (props) {
         <ErrorModal
           title={error.title}
           message={error.message}
-          closeModal={errorHandler}
+          onConfirm={errorHandler}
         />
       )}
       <Card className={styles.input}>
